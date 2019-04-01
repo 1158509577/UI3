@@ -1,7 +1,7 @@
 # UI3
 ## UI3_ListView/AlertDialog/XMLMenu/ActionMode
 ## ListView
-
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -15,8 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="734dp"/>
 </LinearLayout>
+~~~
 
-
+~~~
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -77,8 +78,9 @@ public class Simple_Adapter extends Activity {
 }
 
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/Sample_Adapter_result.png)
-
+~~~
 ## AlertDialog
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -126,6 +128,9 @@ public class Simple_Adapter extends Activity {
             android:text="sign in" />
     </LinearLayout>
 </LinearLayout>
+~~~
+
+~~~
         // 创建对话框构建器
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         // 获取布局
@@ -160,12 +165,12 @@ public class Simple_Adapter extends Activity {
             }
         });
         alertDialog.show();
-    
+ ~~~
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/alertsuccee.png)
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/alertfailure.png)
 
 ## XML Menu
-
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -204,7 +209,8 @@ public class Simple_Adapter extends Activity {
     </item>
 
 </menu>
-
+~~~
+~~~
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -254,11 +260,13 @@ public class XML_menu extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+~~~
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/xmlmenuresult1.png)
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/xmlmenuresult2.png)
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/xmlmenuresult3.png)
 
 ## Action Mode
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -270,6 +278,8 @@ public class XML_menu extends AppCompatActivity {
     app:showAsAction="ifRoom|withText">
 </item>
 </menu>
+~~~
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -297,6 +307,8 @@ public class XML_menu extends AppCompatActivity {
 
     </LinearLayout>
 </LinearLayout>
+~~~
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -310,6 +322,8 @@ public class XML_menu extends AppCompatActivity {
         android:layout_height="match_parent" />
 
 </LinearLayout >
+~~~
+~~~
 package com.example.ui3;
 import android.app.ListActivity;
 import android.content.Context;
@@ -438,5 +452,6 @@ public class Action_Mode extends ListActivity {
     }
 
 }
+~~~
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/actionMode1.png)
 ![Image text](https://github.com/1158509577/UI3/blob/master/app/src/resultimage/actionMode2.png)
